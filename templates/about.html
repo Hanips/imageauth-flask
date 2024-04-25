@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ImageAuth | About</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.png">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('/static/background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            opacity: 0; /* Start with opacity 0 */
+            animation: fadeInAnimation ease 2s forwards; /* Apply animation */
+        }
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        .masthead {
+            padding-top: 6rem;
+            padding-bottom: 4rem;
+            text-align: center;
+            color: #6c757d;
+        }
+        .divider {
+            width: 18rem;
+            border-color: #6c757d;
+            border-width: 0.2rem;
+        }
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #f8f9fa;
+            color: #6c757d;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        .profile-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+        <div class="container px-4 px-lg-0">
+            <a class="navbar-brand" href="/">ImageAuth</a>
+            <a class="navbar-brand" href="/">Home</a>
+        </div>
+    </nav>
+    <!-- Masthead -->
+    <header class="masthead">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h1 class="mt-0">About ImageAuth</h1>
+                    <hr class="divider" />
+                    <p class="text-muted mb-5">ImageAuth is an undergraduate thesis research aiming to detect image forgery using ResNet50 model with Error Level Analysis and Gamma Correction preprocessing. The model achieves a stunning accuracy of 97.58%.</p>
+                    <div class="row justify-content-center"> <!-- Center the row -->
+                        <div class="col-lg-3 offset-lg-1 text-center"> <!-- Center the column and push it to the right -->
+                            <img src="/static/hanief.png" alt="Hanief Widya Wardhana" class="profile-img">
+                        </div>
+                        <div class="col-lg-8 text-left">
+                            <p><strong>Name:</strong> Hanief Widya Wardhana</p>
+                            <p><strong>Student ID:</strong> 4611420024</p>
+                            <p><strong>Email:</strong> hanippw@students.unnes.ac.id</p>
+                            <p><strong>Research Supervisor:</strong> Riza Arifudin S.Pd., M.Cs.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container px-4 px-lg-5">
+            <div class="small">Copyright &copy; 2024 - Penelitian Skripsi Hanief W</div>
+        </div>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
